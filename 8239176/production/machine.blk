@@ -1,4 +1,4 @@
-version:i=76
+version:i=592
 
 content{
   machineId:t="dd2ae04cd65ecbc907b8536f779f109851119006"
@@ -12,11 +12,23 @@ content{
 
     hotkeys{
       ID_AAM{
-        keyboardKey:i=5
+        keyboardKey:i=10
+      }
+
+      ID_AAM_HELICOPTER{
+        keyboardKey:i=10
       }
 
       ID_AGM{
-        keyboardKey:i=5
+        keyboardKey:i=10
+      }
+
+      ID_AGM_LOCK_HELICOPTER{
+        keyboardKey:i=4
+      }
+
+      ID_ATGM_HELICOPTER{
+        keyboardKey:i=10
       }
 
       ID_BAY_DOOR{
@@ -24,11 +36,19 @@ content{
       }
 
       ID_BOMBS{
-        keyboardKey:i=4
+        keyboardKey:i=10
       }
 
-      ID_BOMBS{
-        keyboardKey:i=57
+      ID_BOMBS_HELICOPTER{
+        keyboardKey:i=10
+      }
+
+      ID_BOMBS_SERIES{
+        keyboardKey:i=5
+      }
+
+      ID_BOMBS_SERIES_HELICOPTER{
+        keyboardKey:i=10
       }
 
       ID_CAMERA_BINOCULARS{
@@ -47,8 +67,37 @@ content{
         keyboardKey:i=57
       }
 
+      ID_CONTROL_MODE{
+        keyboardKey:i=56
+        keyboardKey:i=35
+      }
+
       ID_ENABLE_GM_HULL_AIMING{
         keyboardKey:i=29
+      }
+
+      ID_EXIT_SHOOTING_CYCLE_MODE{
+        keyboardKey:i=41
+      }
+
+      ID_EXIT_SHOOTING_CYCLE_MODE_HELICOPTER{
+        keyboardKey:i=41
+      }
+
+      ID_FIRE_ADDITIONAL_GUNS{
+        keyboardKey:i=10
+      }
+
+      ID_FIRE_ADDITIONAL_GUNS_HELICOPTER{
+        keyboardKey:i=10
+      }
+
+      ID_FIRE_CANNONS{
+        keyboardKey:i=10
+      }
+
+      ID_FIRE_CANNONS_HELICOPTER{
+        keyboardKey:i=10
       }
 
       ID_FIRE_GM_SECONDARY_GUN{
@@ -56,11 +105,39 @@ content{
       }
 
       ID_FIRE_GM_SPECIAL_GUN{
+        keyboardKey:i=44
+      }
+
+      ID_FIRE_MGUNS{
+        keyboardKey:i=10
+      }
+
+      ID_FIRE_MGUNS_HELICOPTER{
+        keyboardKey:i=10
+      }
+
+      ID_FIRE_PRIMARY{
+        mouseButton:i=0
+      }
+
+      ID_FIRE_PRIMARY_HELICOPTER{
+        mouseButton:i=0
+      }
+
+      ID_FIRE_SECONDARY{
         keyboardKey:i=57
       }
 
+      ID_FIRE_SECONDARY_HELICOPTER{
+        keyboardKey:i=57
+      }
+
+      ID_FLARES{
+        keyboardKey:i=45
+      }
+
       ID_FLARES_SERIES_HELICOPTER{
-        keyboardKey:i=44
+        keyboardKey:i=45
       }
 
       ID_FLIGHTMENU{
@@ -84,7 +161,19 @@ content{
       }
 
       ID_ROCKETS{
-        keyboardKey:i=5
+        keyboardKey:i=10
+      }
+
+      ID_ROCKETS_HELICOPTER{
+        keyboardKey:i=10
+      }
+
+      ID_ROCKETS_SERIES{
+        keyboardKey:i=10
+      }
+
+      ID_ROCKETS_SERIES_HELICOPTER{
+        keyboardKey:i=10
       }
 
       ID_SCOUT{
@@ -204,6 +293,22 @@ content{
         keyboardKey:i=44
       }
 
+      ID_SWITCH_SHOOTING_CYCLE_PRIMARY{
+        keyboardKey:i=2
+      }
+
+      ID_SWITCH_SHOOTING_CYCLE_PRIMARY_HELICOPTER{
+        keyboardKey:i=2
+      }
+
+      ID_SWITCH_SHOOTING_CYCLE_SECONDARY{
+        keyboardKey:i=3
+      }
+
+      ID_SWITCH_SHOOTING_CYCLE_SECONDARY_HELICOPTER{
+        keyboardKey:i=3
+      }
+
       ID_TANK_NIGHT_VISION{
         keyboardKey:i=79
       }
@@ -219,8 +324,8 @@ content{
         keyboardKey:i=44
       }
 
-      ID_TARGET_CAMERA{
-        mouseButton:i=3
+      ID_TARGET_CAMERA_HELICOPTER{
+        keyboardKey:i=44
       }
 
       ID_THERMAL_WHITE_IS_HOT{
@@ -240,41 +345,64 @@ content{
       }
 
       ID_WEAPON_LOCK{
-        keyboardKey:i=45
+        keyboardKey:i=4
       }
 
       ID_WEAPON_LOCK_HELICOPTER{
-        keyboardKey:i=45
+        keyboardKey:i=4
       }
 
       ID_ZOOM_TOGGLE{
         mouseButton:i=1
       }
+
+      vtol_rangeMax{
+        keyboardKey:i=56
+        keyboardKey:i=36
+      }
+
+      vtol_rangeMax{
+        mouseButton:i=3
+      }
+
+      vtol_rangeMin{
+        keyboardKey:i=56
+        keyboardKey:i=22
+      }
+
+      vtol_rangeMin{
+        mouseButton:i=4
+      }
     }
 
     axes{
+      climb{
+        relSens:r=0.81
+      }
+
+      fire{
+        relSens:r=0.64
+      }
+
       gm_sight_distance{
         mouseAxisId:i=3
+        relSens:r=0.01
       }
 
       gm_zoom{
         mouseAxisId:i=-1
       }
+
+      helicopter_zoom{
+        relSens:r=0.81
+      }
+
+      vtol{
+        relSens:r=0.64
+      }
     }
 
     params{
-      USEROPT_AILERONS_MULTIPLIER:i=79
-      USEROPT_FORCE_GAIN:i=50
-      USEROPT_GUNNER_VIEW_SENSE:i=100
-      USEROPT_GUNNER_VIEW_ZOOM_SENS:i=100
-      USEROPT_HELPERS_MODE:i=0
-      USEROPT_INSTRUCTOR_ENABLED:b=yes
-      USEROPT_INVERTX:i=0
-      USEROPT_INVERTY:b=no
-      USEROPT_INVERTY_SHIP:b=no
-      USEROPT_MOUSE_SENSE:i=25
-      USEROPT_MOUSE_USAGE_NO_AIM:i=1
-      USEROPT_SINGLE_SHOT_BY_TURRET:b=no
     }
 
     deviceMapping{
@@ -379,21 +507,21 @@ content{
     L_inv_white_2:r=0.3
     U_A_2:r=0.45
     U_B_2:r=0.25
-    U_C_2:r=2.8
+    U_C_2:r=2.05
     U_D_2:r=1.5
-    U_E_2:r=0
-    U_F_2:r=1
-    UWhite_2:r=4
+    U_E_2:r=0.02
+    U_F_2:r=1.05
+    UWhite_2:r=3
     lenseFlareMode_2:i=2
     lenseFlareHaloPower_2:r=0.15
     lenseFlareGhostsPower_2:r=0.5
     paper_white_nits:r=200
-    hdr_brightness:r=1
+    hdr_brightness:r=0.8
     hueAlly:r=226
     hueEnemy:r=3
     hueSquad:r=472
     hueSpectatorAlly:r=112
-    hueSpectatorEnemy:r=292
+    hueSpectatorEnemy:r=0.0001
     hueReload:r=3
     hueReloadDone:r=472
     hueHelicopterHud:r=112
@@ -403,20 +531,19 @@ content{
     strobeEnemy:i=0
     strobeAlly:i=0
     SND_TYPE_SFX:r=0.7
-    SND_TYPE_MUSIC:r=0.7
-    SND_TYPE_MENU_MUSIC:r=0.7
+    SND_TYPE_MUSIC:r=0
+    SND_TYPE_MENU_MUSIC:r=0
     SND_TYPE_RADIO:r=0.7
     SND_TYPE_DIALOGS:r=0.7
     SND_TYPE_VOICE_OUT_NEW:r=0.5
     SND_TYPE_VOICE_IN_NEW:r=0.5
     SND_TYPE_ENGINE:r=1
-    SND_TYPE_MY_ENGINE:r=0.7
-    SND_TYPE_MASTER:r=0.5
+    SND_TYPE_MY_ENGINE:r=0.5
+    SND_TYPE_MASTER:r=0.6
     SND_TYPE_GUNS:r=0.7
     SND_TYPE_TINNITUS:r=0.5
-    lastVoiceDeviceOut:t="Speakers/Headphones (Realtek(R) Audio)"
     lastVoiceDeviceIn:t="Microphone (Realtek(R) Audio)"
-    lastSoundDeviceOut:t="Speakers/Headphones (Realtek(R) Audio)"
+    lastSoundDeviceOut:t="AG493UG7R4 (NVIDIA High Definition Audio)"
   }
 
   gui_options{
@@ -427,13 +554,13 @@ content{
       USEROPT_AUTOMATIC_TRANSMISSION_TANK:b=yes
       USEROPT_WHEEL_CONTROL_SHIP:b=no
       USEROPT_SEPERATED_ENGINE_CONTROL_SHIP:b=no
-      USEROPT_BULLET_FALL_INDICATOR_SHIP:b=no
-      USEROPT_BULLET_FALL_SOUND_SHIP:b=no
+      USEROPT_BULLET_FALL_INDICATOR_SHIP:b=yes
+      USEROPT_BULLET_FALL_SOUND_SHIP:b=yes
       USEROPT_SINGLE_SHOT_BY_TURRET:b=no
       USEROPT_AUTO_TARGET_CHANGE_SHIP:b=yes
       USEROPT_REALISTIC_AIMING_SHIP:b=no
-      USEROPT_LOAD_FUEL_AMOUNT:i=300000
-      USEROPT_QUEUE_JIP:b=yes
+      USEROPT_LOAD_FUEL_AMOUNT:i=1000000
+      USEROPT_QUEUE_JIP:b=no
       USEROPT_AUTO_SQUAD:b=yes
       USEROPT_PLAY_INACTIVE_WINDOW_SOUND:b=no
       USEROPT_DAMAGE_INDICATOR_SIZE:i=0
@@ -463,26 +590,26 @@ content{
     OPTIONS_MODE_TRAINING{
       USEROPT_WEATHER:t="clear"
       USEROPT_TIME:t="Day"
-      USEROPT_AIRCRAFT:t="cn_ztz_96a"
-      USEROPT_WEAPONS:t="cn_ztz_96a_default"
-      USEROPT_BULLETS0:t="125mm_china_APDS_FS"
-      USEROPT_BULLETS1:t="125mm_china_HE"
+      USEROPT_AIRCRAFT:t="cn_ptz_89"
+      USEROPT_WEAPONS:t="cn_ptz_89_default"
+      USEROPT_BULLETS0:t=""
+      USEROPT_BULLETS1:t=""
       USEROPT_BULLETS2:t=""
       USEROPT_BULLETS3:t=""
       USEROPT_BULLETS4:t=""
       USEROPT_BULLETS5:t=""
-      USEROPT_BULLET_COUNT0:i=13
-      USEROPT_BULLET_COUNT1:i=14
-      USEROPT_BULLET_COUNT2:i=13
+      USEROPT_BULLET_COUNT0:i=20
+      USEROPT_BULLET_COUNT1:i=0
+      USEROPT_BULLET_COUNT2:i=0
       USEROPT_BULLET_COUNT3:i=0
       USEROPT_BULLET_COUNT4:i=0
       USEROPT_BULLET_COUNT5:i=0
-      USEROPT_SKIN:t="a622f000-5a1e-406b-b033-52c0dfa43067"
-      USEROPT_DIFFICULTY:t="hardcore"
-      USEROPT_LIMITED_FUEL:b=no
-      USEROPT_LIMITED_AMMO:b=no
+      USEROPT_SKIN:t="default"
+      USEROPT_DIFFICULTY:t="realistic"
+      USEROPT_LIMITED_FUEL:b=yes
+      USEROPT_LIMITED_AMMO:b=yes
       USEROPT_MODIFICATIONS:b=yes
-      USEROPT_LOAD_FUEL_AMOUNT:i=728341
+      USEROPT_LOAD_FUEL_AMOUNT:i=809794
     }
 
     OPTIONS_MODE_CAMPAIGN{
@@ -498,8 +625,9 @@ content{
     }
 
     OPTIONS_MODE_MP_DOMINATION{
+      USEROPT_SKIN:t="camo"
       USEROPT_LOAD_FUEL_AMOUNT:i=300000
-      USEROPT_RANDB_CLUSTER:t="SA;US"
+      USEROPT_RANDB_CLUSTER:t="EU;RU"
       USEROPT_BIT_CHOOSE_UNITS_TYPE:i=3
       USEROPT_BIT_CHOOSE_UNITS_RANK:i=62
       USEROPT_BIT_CHOOSE_UNITS_OTHER:i=1
@@ -512,6 +640,7 @@ content{
     }
 
     OPTIONS_MODE_SEARCH{
+      USEROPT_LOAD_FUEL_AMOUNT:i=765152
       USEROPT_USERLOG_FILTER:i=1
     }
   }
@@ -523,10 +652,11 @@ content{
     version:t=""
     version-specific:t=""
     compatibilityHangarBlk:t="config/hangar_airfield.blk"
+    nvidia_app_id:i=10839111
     __settings_blk_path:t="settings.blk"
     releaseChannel:t=""
     graphicsQuality:t="custom"
-    language:t="Chinese"
+    language:t="English"
 
     __allowedConfigOverrides{
       graphicsQuality:t=""
@@ -651,6 +781,7 @@ content{
         alpha_to_coverage:b=no
         oculusSecondaryWindow:b=no
         secondaryResolution:t=""
+        dlssQuality:i=-1
       }
 
       texStreaming{
@@ -854,11 +985,12 @@ content{
       adaptive_vsync:b=no
       compatibilityMode:b=no
       vrMode:b=yes
-      postfx_antialiasing:t="high_taa"
+      postfx_antialiasing:t="high_fxaa"
       alpha_to_coverage:b=yes
       instancing:t="auto"
       driver:t="auto"
       mode:t="fullscreenwindowed"
+      dlssQuality:i=-1
     }
 
     graphics{
@@ -878,34 +1010,52 @@ content{
       contactShadowsQuality:i=1
       tireTracksQuality:i=2
       fxDensityMul:r=0.95
-      grassRadiusMul:r=1
-      rendinstDistMul:r=1.49
+      grassRadiusMul:r=0.01
+      rendinstDistMul:r=0.5
       advancedShore:b=yes
       lenseFlares:b=yes
-      anisotropy:i=16
+      anisotropy:i=4
       lastClipSize:i=8192
-      dirtSubDiv:i=0
+      dirtSubDiv:i=1
       displacementQuality:i=3
-      landquality:i=3
-      panoramaResolution:i=3584
-      shadowQuality:t="high"
+      landquality:i=4
+      panoramaResolution:i=4096
+      shadowQuality:t="medium"
       waterQuality:t="high"
+      clipmapScale:r=1.5
+      giQuality:t="low"
+      skyQuality:i=1
       texquality:t="high"
-      riColorPadding:b=yes
+      riColorPadding:b=no
     }
 
     ps4{
       garlic_size_mb:i=2450
       neo_garlic_size_mb:i=2800
-      onion_size_mb:i=128
+      onion_size_mb:i=160
       dcb_size_mb:i=8
       ccb_size_mb:i=8
       onion_blocks:i=16384
       max_genmip_tex_sz:i=2052
       mem_reserve_mb:i=256
       emergency_buffer_pages:i=20
+      shader_garlic_size_kb:i=2048
+      dynbuf_heap_garlic_mb:i=96
+      dynbuf_heap_onion_mb:i=32
       enable_deferred_mipgen:b=yes
       neo_4k_scale:i=167
+      guiWebCacheCircuit:t="production"
+      enable_defrag:b=no
+    }
+
+    ps5{
+      dcb_size_mb:i=8
+      mem_direct_size_mb:i=4095
+      mem_shader_heap_size_kb:i=8192
+      mem_reserve_mb:i=256
+      max_genmip_tex_sz:i=2052
+      dynbuf_heap_gpu_mb:i=160
+      enable_deferred_mipgen:b=yes
       guiWebCacheCircuit:t="production"
       enable_defrag:b=yes
     }
@@ -1010,7 +1160,7 @@ content{
       workThreadsStackSize:i=131072
       enableMouseHints:b=yes
       replayDofFar:p3=100, 400, 0.5
-      enableNvHighlights:t="off"
+      enableNvHighlights:t="on"
       screenshotAsJpeg:b=yes
       testYunetwork:b=no
     }
@@ -1030,7 +1180,7 @@ content{
 
     openGL{
       nvGLShaderAVWorkaround:b=yes
-      maxThreads:i=6
+      maxThreads:i=16
       max_genmip_tex_sz:i=4096
     }
 
@@ -1050,14 +1200,17 @@ content{
       clipmap:b=yes
       rendinstClipmapShadows:b=yes
       fxReflection:b=yes
-      ssrQuality:i=0
+      detailedWaterForPlanes:b=yes
+      wakeFoamWithoutAA:b=yes
+      ssrQuality:i=2
       staticShadowsOnEffects:b=yes
       haze:b=yes
       ssaoQuality:i=2
       rendinstGlobalShadows:b=yes
-      grass:b=yes
+      grass:b=no
       softFx:b=yes
       shadows:b=yes
+      selfReflection:b=yes
     }
 
     clipmap{
@@ -1067,6 +1220,11 @@ content{
       stackCount:i=8
       step:r=1.7
       finalSize:r=0
+    }
+
+    clipmapImpostor{
+      enabled:b=no
+      distance:r=1300
     }
 
     aviWriter{
@@ -1110,7 +1268,7 @@ content{
       lqMipBiasLQ:i=3
 
       win32{
-        enableStreaming:b=no
+        enableStreaming:b=yes
       }
 
       win64{

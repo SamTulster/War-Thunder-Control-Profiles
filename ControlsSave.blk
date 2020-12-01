@@ -7,11 +7,23 @@ controls{
 
   hotkeys{
     ID_AAM{
-      keyboardKey:i=5
+      keyboardKey:i=10
+    }
+
+    ID_AAM_HELICOPTER{
+      keyboardKey:i=10
     }
 
     ID_AGM{
-      keyboardKey:i=5
+      keyboardKey:i=10
+    }
+
+    ID_AGM_LOCK_HELICOPTER{
+      keyboardKey:i=4
+    }
+
+    ID_ATGM_HELICOPTER{
+      keyboardKey:i=10
     }
 
     ID_BAY_DOOR{
@@ -19,11 +31,19 @@ controls{
     }
 
     ID_BOMBS{
-      keyboardKey:i=4
+      keyboardKey:i=10
     }
 
-    ID_BOMBS{
-      keyboardKey:i=57
+    ID_BOMBS_HELICOPTER{
+      keyboardKey:i=10
+    }
+
+    ID_BOMBS_SERIES{
+      keyboardKey:i=5
+    }
+
+    ID_BOMBS_SERIES_HELICOPTER{
+      keyboardKey:i=10
     }
 
     ID_CAMERA_BINOCULARS{
@@ -42,8 +62,37 @@ controls{
       keyboardKey:i=57
     }
 
+    ID_CONTROL_MODE{
+      keyboardKey:i=56
+      keyboardKey:i=35
+    }
+
     ID_ENABLE_GM_HULL_AIMING{
       keyboardKey:i=29
+    }
+
+    ID_EXIT_SHOOTING_CYCLE_MODE{
+      keyboardKey:i=41
+    }
+
+    ID_EXIT_SHOOTING_CYCLE_MODE_HELICOPTER{
+      keyboardKey:i=41
+    }
+
+    ID_FIRE_ADDITIONAL_GUNS{
+      keyboardKey:i=10
+    }
+
+    ID_FIRE_ADDITIONAL_GUNS_HELICOPTER{
+      keyboardKey:i=10
+    }
+
+    ID_FIRE_CANNONS{
+      keyboardKey:i=10
+    }
+
+    ID_FIRE_CANNONS_HELICOPTER{
+      keyboardKey:i=10
     }
 
     ID_FIRE_GM_SECONDARY_GUN{
@@ -51,11 +100,39 @@ controls{
     }
 
     ID_FIRE_GM_SPECIAL_GUN{
+      keyboardKey:i=44
+    }
+
+    ID_FIRE_MGUNS{
+      keyboardKey:i=10
+    }
+
+    ID_FIRE_MGUNS_HELICOPTER{
+      keyboardKey:i=10
+    }
+
+    ID_FIRE_PRIMARY{
+      mouseButton:i=0
+    }
+
+    ID_FIRE_PRIMARY_HELICOPTER{
+      mouseButton:i=0
+    }
+
+    ID_FIRE_SECONDARY{
       keyboardKey:i=57
     }
 
+    ID_FIRE_SECONDARY_HELICOPTER{
+      keyboardKey:i=57
+    }
+
+    ID_FLARES{
+      keyboardKey:i=45
+    }
+
     ID_FLARES_SERIES_HELICOPTER{
-      keyboardKey:i=44
+      keyboardKey:i=45
     }
 
     ID_FLIGHTMENU{
@@ -79,7 +156,19 @@ controls{
     }
 
     ID_ROCKETS{
-      keyboardKey:i=5
+      keyboardKey:i=10
+    }
+
+    ID_ROCKETS_HELICOPTER{
+      keyboardKey:i=10
+    }
+
+    ID_ROCKETS_SERIES{
+      keyboardKey:i=10
+    }
+
+    ID_ROCKETS_SERIES_HELICOPTER{
+      keyboardKey:i=10
     }
 
     ID_SCOUT{
@@ -199,6 +288,22 @@ controls{
       keyboardKey:i=44
     }
 
+    ID_SWITCH_SHOOTING_CYCLE_PRIMARY{
+      keyboardKey:i=2
+    }
+
+    ID_SWITCH_SHOOTING_CYCLE_PRIMARY_HELICOPTER{
+      keyboardKey:i=2
+    }
+
+    ID_SWITCH_SHOOTING_CYCLE_SECONDARY{
+      keyboardKey:i=3
+    }
+
+    ID_SWITCH_SHOOTING_CYCLE_SECONDARY_HELICOPTER{
+      keyboardKey:i=3
+    }
+
     ID_TANK_NIGHT_VISION{
       keyboardKey:i=79
     }
@@ -214,8 +319,8 @@ controls{
       keyboardKey:i=44
     }
 
-    ID_TARGET_CAMERA{
-      mouseButton:i=3
+    ID_TARGET_CAMERA_HELICOPTER{
+      keyboardKey:i=44
     }
 
     ID_THERMAL_WHITE_IS_HOT{
@@ -235,25 +340,60 @@ controls{
     }
 
     ID_WEAPON_LOCK{
-      keyboardKey:i=45
+      keyboardKey:i=4
     }
 
     ID_WEAPON_LOCK_HELICOPTER{
-      keyboardKey:i=45
+      keyboardKey:i=4
     }
 
     ID_ZOOM_TOGGLE{
       mouseButton:i=1
     }
+
+    vtol_rangeMax{
+      keyboardKey:i=56
+      keyboardKey:i=36
+    }
+
+    vtol_rangeMax{
+      mouseButton:i=3
+    }
+
+    vtol_rangeMin{
+      keyboardKey:i=56
+      keyboardKey:i=22
+    }
+
+    vtol_rangeMin{
+      mouseButton:i=4
+    }
   }
 
   axes{
+    climb{
+      relSens:r=0.81
+    }
+
+    fire{
+      relSens:r=0.64
+    }
+
     gm_sight_distance{
       mouseAxisId:i=3
+      relSens:r=0.01
     }
 
     gm_zoom{
       mouseAxisId:i=-1
+    }
+
+    helicopter_zoom{
+      relSens:r=0.81
+    }
+
+    vtol{
+      relSens:r=0.64
     }
   }
 

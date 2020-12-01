@@ -2,12 +2,12 @@ controls{
   version:i=5
 
   basePresetPaths{
-    default:t="config/hotkeys/hotkey.thrustmaster_t16000m.blk"
+    default:t="wt/config/hotkeys/hotkey.thrustmaster_t16000m.blk"
   }
 
   hotkeys{
     ID_AAM{
-      joyButton:i=2
+      keyboardKey:i=10
     }
 
     ID_AEROBATICS_SMOKE{
@@ -15,7 +15,7 @@ controls{
     }
 
     ID_AGM{
-      joyButton:i=1
+      keyboardKey:i=10
     }
 
     ID_AIR_BRAKE{
@@ -30,12 +30,40 @@ controls{
       keyboardKey:i=48
     }
 
+    ID_BOMBS{
+      keyboardKey:i=10
+    }
+
     ID_BOMBS_SERIES{
-      keyboardKey:i=57
+      keyboardKey:i=10
     }
 
     ID_CONTINUE{
       keyboardKey:i=57
+    }
+
+    ID_EXIT_SHOOTING_CYCLE_MODE{
+      keyboardKey:i=41
+    }
+
+    ID_FIRE_ADDITIONAL_GUNS{
+      keyboardKey:i=10
+    }
+
+    ID_FIRE_CANNONS{
+      keyboardKey:i=10
+    }
+
+    ID_FIRE_MGUNS{
+      keyboardKey:i=10
+    }
+
+    ID_FIRE_PRIMARY{
+      joyButton:i=0
+    }
+
+    ID_FIRE_SECONDARY{
+      joyButton:i=1
     }
 
     ID_FLAPS_DOWN{
@@ -60,6 +88,14 @@ controls{
 
     ID_PTT{
       keyboardKey:i=157
+    }
+
+    ID_ROCKETS{
+      keyboardKey:i=10
+    }
+
+    ID_ROCKETS_SERIES{
+      keyboardKey:i=10
     }
 
     ID_SCREENSHOT{
@@ -95,6 +131,22 @@ controls{
       keyboardKey:i=77
     }
 
+    ID_SHOW_MULTIFUNC_WHEEL_MENU{
+      keyboardKey:i=21
+    }
+
+    ID_SWITCH_SHOOTING_CYCLE_PRIMARY{
+      keyboardKey:i=2
+    }
+
+    ID_SWITCH_SHOOTING_CYCLE_SECONDARY{
+      joyButton:i=2
+    }
+
+    ID_SWITCH_SHOOTING_CYCLE_SECONDARY{
+      keyboardKey:i=3
+    }
+
     ID_TARGET_CAMERA{
       keyboardKey:i=210
     }
@@ -124,11 +176,7 @@ controls{
     }
 
     ID_WEAPON_LOCK{
-      keyboardKey:i=45
-    }
-
-    ID_WEAPON_LOCK{
-      joyButton:i=6
+      keyboardKey:i=10
     }
 
     ID_ZOOM_TOGGLE{
@@ -150,18 +198,19 @@ controls{
     }
   }
 
-  squarePairs{
-  }
-
   params{
     USEROPT_AILERONS_MULTIPLIER:i=79
+    USEROPT_ATGM_AIM_SENS_HELICOPTER:i=100
+    USEROPT_ATGM_AIM_ZOOM_SENS_HELICOPTER:i=100
     USEROPT_AUTOMATIC_TRANSMISSION_TANK:b=yes
     USEROPT_AUTOTRIM:b=no
     USEROPT_ELEVATOR_MULTIPLIER:i=64
+    USEROPT_FIX_GUN_IN_MOUSE_LOOK:b=no
     USEROPT_FORCE_GAIN:i=50
     USEROPT_FREE_CAMERA_INERTIA:i=100
     USEROPT_GUNNER_INVERTY:b=no
-    USEROPT_GUNNER_VIEW_SENSE:i=50
+    USEROPT_GUNNER_VIEW_SENSE:i=100
+    USEROPT_GUNNER_VIEW_ZOOM_SENS:i=100
     USEROPT_HEADTRACK_ENABLE:b=no
     USEROPT_HEADTRACK_SCALE_X:i=5
     USEROPT_HEADTRACK_SCALE_Y:i=5
@@ -176,11 +225,11 @@ controls{
     USEROPT_INVERTX:i=0
     USEROPT_INVERTY:b=no
     USEROPT_INVERTY_HELICOPTER:b=no
+    USEROPT_INVERTY_HELICOPTER_GUNNER:b=no
     USEROPT_INVERTY_SHIP:b=no
     USEROPT_INVERTY_SPECTATOR:b=no
     USEROPT_INVERTY_SUBMARINE:b=no
     USEROPT_INVERTY_TANK:b=no
-    USEROPT_INVERTY_WALKER:b=no
     USEROPT_JOYFX:b=yes
     USEROPT_MOUSE_AIM_SENSE:i=25
     USEROPT_MOUSE_SENSE:i=25
@@ -190,6 +239,7 @@ controls{
     USEROPT_REPLAY_CAMERA_WIGGLE:i=100
     USEROPT_RUDDER_MULTIPLIER:i=43
     USEROPT_SEPERATED_ENGINE_CONTROL_SHIP:b=no
+    USEROPT_SINGLE_SHOT_BY_TURRET:b=no
     USEROPT_WHEEL_CONTROL_SHIP:b=no
     USEROPT_ZOOM_SENSE:i=100
   }
@@ -197,11 +247,11 @@ controls{
   deviceMapping{
     joystick{
       connected:b=yes
-      buttonsCount:i=20
+      devId:t="044F:B10A"
       axesOffset:i=0
       name:t="T.16000M"
       buttonsOffset:i=0
-      devId:t="044F:B10A"
+      buttonsCount:i=20
       axesCount:i=6
     }
   }
@@ -220,7 +270,9 @@ settings{
   mouseSens:r=0.5
   mouseAimSens:r=0.5
   gunnerViewSens:r=1
+  gunnerViewZoomSens:r=1
   atgmAimSensHelicopter:r=1
+  atgmAimZoomSensHelicopter:r=1
   mouseSmooth:b=no
   mouseJoystickDeadZone:r=0.1
   helicopterMouseJoystickDeadZone:r=0.1
@@ -267,6 +319,7 @@ settings{
   invertYTank:b=no
   invertYShip:b=no
   invertYHelicopter:b=no
+  invertYHelicopterGunner:b=no
   invertYWalker:b=no
   invertYSpectator:b=no
   invertYSubmarine:b=no
